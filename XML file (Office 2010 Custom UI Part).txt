@@ -1,0 +1,23 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon startFromScratch="false">
+    <tabs>
+
+      <tab idMso="TabHome">
+        <group id="AddInMan" label="AddIn-Man" insertAfterMso="Editing">
+
+          <button id="addinman1" label="Add-in-Ordner" size="large" 
+		onAction="OfficeAddInFolder_show" image="addin-man-1"
+		screentip="Add-ins ablegen"
+		supertip="Öffnet im Windows-Explorer den Standardordner für Office Add-ins. Hier sollten alle Excel Add-ins (xlam-Dateien) abgelegt werden."/>
+
+	    <button id="addinman2" label="Add-in-Manager" size="large" 
+		onAction="AddInManager_show" image="addin-man-2"
+		screentip="Add-ins aktivieren/deaktivieren"
+		supertip="Öffnet den Excel-Add-in-Manager, mit dem Add-ins aktiviert bzw. deaktiviert werden können."/>
+        
+	 </group>
+      </tab>
+
+    </tabs>
+  </ribbon>
+</customUI>
